@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Интернет-магазин Мишка</title>
+</head>
+<body>
+
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="http://placehold.it/115x45" alt="Логотип интернет-магазина Мишка">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current"><a href="#">Каталог товаров</a></li>
+          <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="site-list__item site-list__item--search"><a href="#">Поиск по сайту</a></li>
+          <li class="site-list__item site-list__item--cart"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+
+    <h1 class="page-main__header">Каталог товаров</h1>
+
+    <div class="products-wrapper">
+      <article class="products-wrapper__item product-item">
+        <h2 class="product-item__title">Зайчик-попрыгайчик</h2>
+        <img class="product-item__image" src="http://placehold.it/260x195" alt="Наш вязаный Зайчик-попрыгайчик">
+        <p class="product-item__size">Рост 30 см, вес 200 г</p>
+        <b class="product-item__price">1 200 руб.</b>
+        <a class="product-item__cart" href="#">Положить в корзину</a>
+      </article>
+      <article class="products-wrapper__item product-item">
+        <h2 class="product-item__title">Корзинка для белья</h2>
+        <img class="product-item__image" src="http://placehold.it/260x195" alt="Наша вязаная корзинка для белья">
+        <p class="product-item__size">Диаметр 15 см, высота 10 см</p>
+        <b class="product-item__price">690 руб.</b>
+        <a class="product-item__cart" href="#">Положить в корзину</a>
+      </article>
+      <article class="products-wrapper__item product-item">
+        <h2 class="product-item__title">Большая корзинка для игрушек</h2>
+        <img class="product-item__image" src="http://placehold.it/260x195" alt="Наша вязаная большая корзинка для игрушек">
+        <p class="product-item__size">Диаметр 30 см, высота 30 см</p>
+        <b class="product-item__price">1 500 руб.</b>
+        <a class="product-item__cart" href="#">Положить в корзину</a>
+      </article>
+    </div>
+
+    <section class="production"></section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__socials socials">
+      <ul class="socials__list">
+        <li class="socials__list-item">
+          <a href="https://instagram.com">
+            <img src="http://placehold.it/30x30" alt="Мы в инстаграме">
+          </a>
+        </li>
+        <li class="socials__list-item">
+          <a href="https://facebook.com"><img src="http://placehold.it/30x30" alt="Мы в фейсбуке"></a>
+        </li>
+        <li class="socials__list-item">
+          <a href="https://twitter.com"><img src="http://placehold.it/30x30" alt="Мы в твиттере"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/17">HTML Academy</a>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <section class="choice">
+      <h2 class="choice__title">Добавить в корзину</h2>
+      <p class="choice-text">Выберите размер:</p>
+      <input class="choice__field" id="choice-s" type="radio" checked>
+      <label class="choice__value choice__value--checked" for="choice-s">S</label>
+      <input class="choice__field" id="choice-m" type="radio">
+      <label class="choice__value" for="choice-m">M</label>
+      <input class="choice__field" id="choice-l" type="radio">
+      <label class="choice__value" for="choice-l">L</label>
+      <a class="choice__add button" href="#">Добавить</a>
+    </section>
+  </div>
+
+</body>
+</html>
