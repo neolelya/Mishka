@@ -1,0 +1,16 @@
+.copyright {
+  padding: 20px;
+
+  &__text {
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  &__icon {
+    width: 27px;
+    height: 34px;
+    vertical-align: middle;
+  }
+}

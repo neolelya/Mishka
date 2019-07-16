@@ -1,0 +1,15 @@
+.products {
+  background: url("../../img/hero-mobile@1x.jpg") no-repeat #fafafa;
+  height: 373px;
+  padding: 70px 30px 0;
+
+  &__title {
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
