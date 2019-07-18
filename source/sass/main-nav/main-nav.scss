@@ -1,8 +1,15 @@
-.site-list {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+.main-nav {
+  color: #000000;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+
+  &__list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
 
   &__item {
     position: relative;

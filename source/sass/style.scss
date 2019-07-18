@@ -1,20 +1,18 @@
-@import "fonts";
-@import "button";
-@import "modal/choice";
-@import "footer/copyright";
-@import "main-index/information";
-@import "header/main-nav";
+@import "fonts/fonts";
+@import "button/button";
+@import "choice/choice";
+@import "information/information";
+@import "main-nav/main-nav";
 @import "modal/modal";
-@import "footer/page-footer";
-@import "header/page-header";
-@import "page-main";
-@import "main-catalog/product-item";
-@import "main-index/product-kind";
-@import "main-index/products";
-@import "main-catalog/products-wrapper";
-@import "header/site-list";
-@import "footer/socials";
-@import "main-index/weekly-product";
+@import "page-footer/page-footer";
+@import "page-header/page-header";
+@import "page-title/page-title";
+@import "product/product";
+@import "goods-kind/goods-kind";
+@import "handmade-goods/handmade-goods";
+@import "products/products";
+@import "socials/socials";
+@import "weekly-product/weekly-product";
 
 body {
   font-family: "Open Sans", "Arial", sans-serif;
