@@ -1,0 +1,36 @@
+.choice {
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &__value {
+    font-size: 17px;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border: 2px solid #ececec;
+
+    &--checked {
+      border-color: #63d1bb;
+    }
+  }
+
+  &__add {
+    color: #ffffff;
+    border-color: #63d1bb;
+    background-color: #63d1bb;
+  }
+}

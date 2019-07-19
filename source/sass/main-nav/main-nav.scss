@@ -1,0 +1,48 @@
+.main-nav {
+  color: #000000;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+
+  &__list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  &__item {
+    position: relative;
+    padding: 25px 45px;
+    border-top: 2px solid #ececec;
+    margin-left: -30px;
+    margin-right: -30px;
+
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    &--search::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 10px;
+      background: url("../../img/icon-search.svg") no-repeat;
+      min-width: 18px;
+      min-height: 18px;
+      opacity: 0.2;
+    }
+
+    &--cart::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 10px;
+      background: url("../../img/icon-cart.svg") no-repeat;
+      min-width: 21px;
+      min-height: 19px;
+      opacity: 0.2;
+    }
+  }
+}
