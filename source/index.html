@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Мишка</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -21,7 +22,11 @@
         </svg>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle">Открыть меню</button>
+        <button class="main-nav__toggle" aria-label="Открыть меню">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="20.514px" height="20.512px" viewBox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512" xml:space="preserve">
+            <polygon fill="#231F20" points="20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 "/>
+          </svg>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
@@ -40,8 +45,8 @@
       <section class="handmade-goods">
         <b class="handmade-goods__title">Милые штуки ручной работы для дома</b>
         <ul class="handmade-goods__list goods-kind">
-          <li class="goods-kind__item goods-kind__item--interior"><a href="#">Предметы интерьера</a></li>
-          <li class="goods-kind__item goods-kind__item--toys"><a href="#">Детские игрушки</a></li>
+          <li class="goods-kind__item goods-kind__item--interior"><a href="#">Предметы<br>интерьера</a></li>
+          <li class="goods-kind__item goods-kind__item--toys"><a href="#">Детские<br>игрушки</a></li>
         </ul>
       </section>
 
@@ -62,7 +67,9 @@
           <dt class="weekly-product__key">Высота:</dt>
           <dd class="weekly-product__value">15 см</dd>
         </dl>
-        <img src="img/triple-set-mobile@1x.jpg" alt="Наши вязаные корзинки" width="260" height="315">
+        <img class="weekly-product--mobile" src="img/triple-set-mobile@1x.jpg" alt="Наши вязаные корзинки" width="260" height="315">
+        <img class="weekly-product--tablet" src="img/triple-set-tablet@1x.jpg" alt="Наши вязаные корзинки" width="333" height="404">
+        <img class="weekly-product--desktop" src="img/triple-set-desktop@1x.jpg" alt="Наши вязаные корзинки" width="525" height="636">
         <b class="weekly-product__price">Цена: 990 руб.</b>
         <a class="weekly-product__order button" href="#">Заказать</a>
       </section>
@@ -126,6 +133,7 @@
     </main>
 
     <footer class="page-footer">
+      <img class="page-footer__logo" src="img/logo-footer.svg" alt="Логотип интернет-магазига Мишка" width="105" height="35" >
       <div class="page-footer__socials socials">
         <ul class="socials__list">
           <li class="socials__list-item">
@@ -153,7 +161,7 @@
       </div>
       <div class="page-footer__copyright">
         <b class="page-footer__text">Разработано</b>
-        <a class="page-footer__link" href="https://up.htmlacademy.ru/adaptive/17">HTML Academy
+        <a class="page-footer__link" href="https://up.htmlacademy.ru/adaptive/17">
           <svg class="page-footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
             <path fill="#63d1bb" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
           </svg>

@@ -1,5 +1,7 @@
+@import "../variables";
+
 .product {
-  border-bottom: 2px solid #ececec;
+  border-bottom: 2px solid $border-color;
 
   &__title {
     font-size: 17px;
@@ -15,17 +17,17 @@
     line-height: 30px;
     margin-top: 0;
     margin-bottom: 20px;
-    border-bottom: 2px solid #ececec;
+    border-bottom: 2px solid $border-color;
   }
 
   &__price {
     font-weight: 700;
-    color: #000000;
+    color: $black;
   }
 
   &__cart {
     text-decoration: none;
-    color: #000000;
+    color: $black;
     background: 100% 0 url("../../img/icon-cart.svg") no-repeat;
     min-width: 21px;
     min-height: 19px;

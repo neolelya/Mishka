@@ -1,10 +1,14 @@
+@import "../variables";
+
 .button {
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #444444;
-  border: 2px solid #444444;
-  padding: 10px 20px;
+  min-width: 260px;
+  color: $dark-grey;
+  border: 2px solid $dark-grey;
+  padding: 15px 30px;
 }

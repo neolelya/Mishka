@@ -1,4 +1,43 @@
+@import "../variables";
+
 .page-header {
-  padding: 15px 30px;
-  border-bottom: 2px solid #ececec;
+  display: flex;
+  flex-direction: column;
+  padding-top: 23px;
+  border-bottom: 1px solid $border-color;
+
+  &__logo {
+    align-self: center;
+    min-height: 36px;
+    z-index: 5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &__logo {
+      align-self: flex-start;
+      margin-top: 25px;
+      margin-bottom: 13px;
+      min-height: 50px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    justify-content: center;
+
+    &__logo {
+      min-height: 73px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 }

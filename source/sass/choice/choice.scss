@@ -1,3 +1,5 @@
+@import "../variables";
+
 .choice {
   &__title {
     font-size: 25px;
@@ -5,7 +7,7 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
+    color: $black;
     margin-top: 0;
     margin-bottom: 20px;
   }
@@ -21,16 +23,18 @@
     line-height: 17px;
     text-transform: uppercase;
     padding: 20px 30px;
-    border: 2px solid #ececec;
+    border: 2px solid $border-color;
 
     &--checked {
-      border-color: #63d1bb;
+      border-color: $teal-color;
     }
   }
 
   &__add {
-    color: #ffffff;
-    border-color: #63d1bb;
-    background-color: #63d1bb;
+    display: block;
+    color: $white;
+    border-color: $teal-color;
+    background-color: $teal-color;
+    margin-top: 50px;
   }
 }

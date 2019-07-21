@@ -1,9 +1,24 @@
 .socials {
   &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 5px;
+    padding: 25px;
     border-bottom: 2px solid #e5e5e5;
+
+    &-item {
+      margin-right: 35px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .socials {
+    &__list {
+      border-bottom: none;
+    }
   }
 }
