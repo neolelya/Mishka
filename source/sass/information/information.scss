@@ -87,11 +87,6 @@
     }
 
     &__list {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      height: 500px;
-
       &-item {
         font-size: 20px;
         line-height: 22px;

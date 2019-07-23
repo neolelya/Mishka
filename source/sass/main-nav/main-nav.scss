@@ -68,7 +68,7 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     flex-direction: row;
-    margin-top: -88px;
+    margin-top: -90px;
     width: 100%;
 
     &__wrapper {
@@ -144,6 +144,8 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    margin-top: -103px;
+
     &__wrapper {
       width: 100%;
     }

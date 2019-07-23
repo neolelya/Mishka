@@ -40,7 +40,12 @@
 
     &__logo {
       display: block;
-      padding: 20px;
+      align-self: center;
+      fill: $black;
+    }
+
+    &__copyright {
+      padding: 0;
     }
   }
 }

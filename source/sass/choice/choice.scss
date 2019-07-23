@@ -1,6 +1,8 @@
 @import "../variables";
 
 .choice {
+  text-align: center;
+
   &__title {
     font-size: 25px;
     line-height: 30px;
@@ -9,20 +11,26 @@
     text-transform: uppercase;
     color: $black;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   &__text {
+    text-align: center;
     line-height: 30px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   &__value {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 82px;
+    min-height: 48px;
     font-size: 17px;
     line-height: 17px;
+    text-align: center;
     text-transform: uppercase;
-    padding: 20px 30px;
+    padding: 15px 30px;
     border: 2px solid $border-color;
 
     &--checked {
@@ -35,6 +43,17 @@
     color: $white;
     border-color: $teal-color;
     background-color: $teal-color;
-    margin-top: 50px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .choice {
+    width: 100%;
+    text-align: justify;
+
+    &__value {
+      width: 32%;
+    }
   }
 }
