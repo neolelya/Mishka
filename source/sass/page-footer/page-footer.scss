@@ -3,31 +3,37 @@
 .page-footer {
   padding-left: 30px;
   padding-right: 30px;
-  background-color: $light-grey;
+  background-color: $complementary-background;
+}
 
-  &__logo {
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.page-footer__text {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $main-text;
+  margin-right: 25px;
+}
+
+.page-footer__icon {
+  width: 27px;
+  height: 34px;
+  vertical-align: middle;
+}
+
+@media (min-width: $mobile-width) {
+  .page-footer__logo {
     display: none;
-  }
-
-  &__copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-
-  &__text {
-    font-size: 19px;
-    line-height: 18px;
-    font-weight: 700;
-    color: $black;
-    margin-right: 25px;
-  }
-
-  &__icon {
-    width: 27px;
-    height: 34px;
-    vertical-align: middle;
   }
 }
 
@@ -37,15 +43,15 @@
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
+  }
 
-    &__logo {
-      display: block;
-      align-self: center;
-      fill: $black;
-    }
+  .page-footer__logo {
+    display: block;
+    align-self: center;
+    fill: $main-text;
+  }
 
-    &__copyright {
-      padding: 0;
-    }
+  .page-footer__copyright {
+    padding: 0;
   }
 }

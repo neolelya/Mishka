@@ -2,58 +2,54 @@
 
 .choice {
   text-align: center;
+}
 
-  &__title {
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    color: $black;
-    margin-top: 0;
-    margin-bottom: 10px;
+.choice__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: $main-text;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.choice__text {
+  text-align: center;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.choice__value {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 30%;
+  min-height: 48px;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border: 2px solid $border-color;
+
+  &--checked {
+    border-color: $accent-color;
   }
+}
 
-  &__text {
-    text-align: center;
-    line-height: 30px;
-    margin-top: 0;
-    margin-bottom: 25px;
-  }
-
-  &__value {
-    display: inline-block;
-    vertical-align: middle;
-    min-width: 82px;
-    min-height: 48px;
-    font-size: 17px;
-    line-height: 17px;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 15px 30px;
-    border: 2px solid $border-color;
-
-    &--checked {
-      border-color: $teal-color;
-    }
-  }
-
-  &__add {
-    display: block;
-    color: $white;
-    border-color: $teal-color;
-    background-color: $teal-color;
-    margin-top: 30px;
-  }
+.choice__add {
+  display: block;
+  color: $basic-background;
+  border-color: $accent-color;
+  background-color: $accent-color;
+  margin-top: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .choice {
     width: 100%;
     text-align: justify;
-
-    &__value {
-      width: 32%;
-    }
   }
 }

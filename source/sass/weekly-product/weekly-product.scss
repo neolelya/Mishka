@@ -17,70 +17,70 @@
     height: 6px;
   }
 
-  &--tablet,
-  &--desktop {
+  &--medium,
+  &--large {
     display: none;
   }
+}
 
-  &__name {
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: 700;
-    color: $black;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+.weekly-product__name {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $main-text;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-  &__title {
-    display: block;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $teal-color;
-    margin-top: 5px;
-    margin-bottom: 23px;
-  }
+.weekly-product__title {
+  display: block;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $accent-color;
+  margin-top: 5px;
+  margin-bottom: 23px;
+}
 
-  &__description {
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
+.weekly-product__description {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
 
-  &__parameters {
-    display: flex;
-    flex-wrap: wrap;
-    width: 260px;
-    line-height: 20px;
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
+.weekly-product__parameters {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 
-  &__key {
-    min-width: 95px;
-    padding-top: 10px;
-    padding-bottom: 7px;
-    border-bottom: 2px solid $border-color;
-  }
+.weekly-product__key {
+  min-width: 95px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  border-bottom: 2px solid $border-color;
+}
 
-  &__value {
-    min-width: 155px;
-    margin-left: 0;
-    margin-right: auto;
-    padding-top: 10px;
-    border-bottom: 2px solid $border-color;
-  }
+.weekly-product__value {
+  min-width: 155px;
+  margin-left: 0;
+  margin-right: auto;
+  padding-top: 10px;
+  border-bottom: 2px solid $border-color;
+}
 
-  &__price {
-    align-self: center;
-    font-size: 17px;
-    padding-top: 22px;
-    padding-bottom: 27px;
-  }
+.weekly-product__price {
+  align-self: center;
+  font-size: 17px;
+  padding-top: 22px;
+  padding-bottom: 27px;
+}
 
-  &__order {
-    align-self: center;
-  }
+.weekly-product__order {
+  align-self: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -93,70 +93,70 @@
       height: 17px;
     }
 
-    &--tablet {
+    &--medium {
       order: 6;
       display: block;
       align-self: flex-end;
       margin-top: -405px;
     }
 
-    &--mobile,
-    &--desktop {
+    &--small,
+    &--large {
       display: none;
     }
+  }
 
-    &__name {
-      display: flex;
-      justify-content: space-between;
-      order: 1;
-      width: 100%;
-      font-size: 43px;
-      line-height: 50px;
-      padding-bottom: 48px;
-    }
+  .weekly-product__name {
+    display: flex;
+    justify-content: space-between;
+    order: 1;
+    width: 100%;
+    font-size: 43px;
+    line-height: 50px;
+    padding-bottom: 48px;
+  }
 
-    &__title {
-      width: 100px;
-      text-align: center;
-      line-height: 17px;
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-top: 10px;
-      padding-bottom: 7px;
-      padding-right: 25px;
-    }
+  .weekly-product__title {
+    width: 100px;
+    text-align: center;
+    line-height: 17px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-right: 25px;
+  }
 
-    &__description {
-      order: 2;
-      width: 50%;
-      font-size: 17px;
-      line-height: 30px;
-      margin-bottom: 35px;
-    }
+  .weekly-product__description {
+    order: 2;
+    width: 50%;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
 
-    &__parameters {
-      order: 3;
-      width: 50%;
-      padding-right: 43px;
-      margin-bottom: 35px;
-    }
+  .weekly-product__parameters {
+    order: 3;
+    width: 50%;
+    padding-right: 43px;
+    margin-bottom: 35px;
+  }
 
-    &__price {
-      order: 4;
-      align-self: flex-start;
-      width: 50%;
-      text-align: center;
-      font-size: 20px;
-      padding-right: 43px;
-      margin-bottom: 10px;
-    }
+  .weekly-product__price {
+    order: 4;
+    align-self: flex-start;
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    padding-right: 43px;
+    margin-bottom: 10px;
+  }
 
-    &__order {
-      align-self: flex-start;
-      min-width: 290px;
-      margin-right: 43px;
-      order: 5;
-    }
+  .weekly-product__order {
+    align-self: flex-start;
+    min-width: 290px;
+    margin-right: 43px;
+    order: 5;
   }
 }
 
@@ -170,67 +170,67 @@
       height: 23px;
     }
 
-    &--desktop {
+    &--large {
       order: 6;
       display: block;
       align-self: flex-end;
       margin-top: -640px;
     }
 
-    &--mobile,
-    &--tablet {
+    &--small,
+    &--medium {
       display: none;
     }
+  }
 
-    &__name {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-      order: 1;
-      width: 100%;
-      font-size: 53px;
-      line-height: 57px;
-      padding-top: 50px;
-      padding-bottom: 40px;
-      z-index: 5;
-    }
+  .weekly-product__name {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    order: 1;
+    width: 100%;
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    z-index: 5;
+  }
 
-    &__title {
-      line-height: 17px;
-      min-width: 175px;
-      padding: 17px 30px 17px 17px;
-    }
+  .weekly-product__title {
+    line-height: 17px;
+    min-width: 175px;
+    padding: 17px 30px 17px 17px;
+  }
 
-    &__description {
-      order: 2;
-      min-width: 30%;
-      font-size: 17px;
-      line-height: 30px;
-      margin-bottom: 45px;
-      padding-left: 175px;
-    }
+  .weekly-product__description {
+    order: 2;
+    min-width: 30%;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 45px;
+    padding-left: 175px;
+  }
 
-    &__parameters {
-      order: 3;
-      width: 30%;
-      padding-right: 43px;
-      margin-left: 175px;
-      margin-bottom: 85px;
-    }
+  .weekly-product__parameters {
+    order: 3;
+    width: 30%;
+    padding-right: 43px;
+    margin-left: 175px;
+    margin-bottom: 85px;
+  }
 
-    &__key {
-      padding-bottom: 10px;
-    }
+  .weekly-product__key {
+    padding-bottom: 10px;
+  }
 
-    &__price {
-      margin-left: 175px;
-      width: 30%;
-      margin-bottom: 5px;
-    }
+  .weekly-product__price {
+    margin-left: 175px;
+    width: 30%;
+    margin-bottom: 5px;
+  }
 
-    &__order {
-      margin-left: 175px;
-      min-width: 290px;
-    }
+  .weekly-product__order {
+    margin-left: 175px;
+    min-width: 290px;
   }
 }
