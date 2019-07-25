@@ -1,3 +1,19 @@
+@import "../variables";
+
 .products {
-  padding: 30px;
+  padding: 20px 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .products {
+    padding: 80px 50px 53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products {
+    display: flex;
+    width: 100%;
+    padding: 130px 50px 55px 50px;
+  }
 }

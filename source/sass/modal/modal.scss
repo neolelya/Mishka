@@ -1,4 +1,14 @@
+@import "../variables";
+
 .modal {
   padding: 30px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 565px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
 }

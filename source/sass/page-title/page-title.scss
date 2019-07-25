@@ -1,12 +1,49 @@
-.page-main {
-  &__header {
-    font-size: 27px;
-    line-height: 30px;
-    font-weight: 700;
-    color: #000000;
-    background-color: #f1f1f1;
+@import "../variables";
+
+.page-main__header {
+  min-height: 177px;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: $main-text;
+  background-color: $complementary-background;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 65px 30px 75px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__header {
+    position: relative;
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 95px;
+    margin-top: -70px;
+    border-top: 1px solid $border-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: 0 0 url("../../img/bg-zigzag-fill.svg") repeat-x;
+      background-size: cover;
+      width: 100%;
+      min-height: 10px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    font-size: 53px;
+    line-height: 57px;
+    min-height: 250px;
     margin-top: 0;
-    margin-bottom: 0;
-    padding: 70px 30px;
+
+    &::after {
+      min-height: 14px;
+    }
   }
 }

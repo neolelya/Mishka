@@ -1,22 +1,57 @@
+@import "../variables";
+
 .page-footer {
   padding-left: 30px;
   padding-right: 30px;
-  background-color: #f1f1f1;
+  background-color: $complementary-background;
+}
 
-  &__copyright {
-    padding: 20px;
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.page-footer__text {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $main-text;
+  margin-right: 25px;
+}
+
+.page-footer__icon {
+  width: 27px;
+  height: 34px;
+  vertical-align: middle;
+}
+
+@media (min-width: $mobile-width) {
+  .page-footer__logo {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
-  &__text {
-    font-size: 19px;
-    line-height: 18px;
-    font-weight: 700;
-    color: #000000;
+  .page-footer__logo {
+    display: block;
+    align-self: center;
+    fill: $main-text;
   }
 
-  &__icon {
-    width: 27px;
-    height: 34px;
-    vertical-align: middle;
+  .page-footer__copyright {
+    padding: 0;
   }
 }
