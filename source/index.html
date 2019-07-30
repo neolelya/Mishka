@@ -18,21 +18,28 @@
       <a class="page-header__logo page-header__logo--large" href="#" aria-label="Логотип интернет-магазина Мишка">
         <img src="img/logo-desktop.svg" alt="Логотип интернет-магазина Мишка" width="148.051px" height="72.707px">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" aria-label="Открыть меню">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="20.514px" height="20.512px" viewBox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512" xml:space="preserve">
+      <button class="page-header__toggle" aria-label="Открыть меню">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="20.514px" height="20.512px" viewBox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512" xml:space="preserve">
             <polygon fill="#231F20" points="20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 "/>
           </svg>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
-          </ul>
+      </button>
+      <nav class="main-nav">
+        <div class="main-nav__services">
+          <a class="main-nav__services-item" href="catalog.html">Каталог товаров</a>
+          <a class="main-nav__services-item" href="form.html">Вязание на заказ</a>
+        </div>
+        <div class="main-nav__actions">
+          <a class="main-nav__actions-item main-nav__actions-item--search" href="#">Поиск по сайту</a>
+          <a class="main-nav__actions-item main-nav__actions-item--cart" href="#">Корзина: пока пуста</a>
+        </div>
+        <div class="main-nav__offers">
+          <a class="main-nav__offers-item main-nav__offers-item--new" href="#">Новые поступления</a>
+          <a class="main-nav__offers-item main-nav__offers-item--sale" href="#">Распродажа</a>
         </div>
       </nav>
+      <div class="main-nav__delivery">
+        <a class="main-nav__delivery-item" href="#">Бесплатная доставка по России</a>
+      </div>
     </header>
 
     <main>
@@ -48,27 +55,32 @@
       </section>
 
       <section class="weekly-product">
-        <h2 class="weekly-product__name">Вязаные корзинки
+        <div class="weekly-product__header">
+          <h2 class="weekly-product__name">Вязаные корзинки</h2>
           <span class="weekly-product__title">Товар недели</span>
-        </h2>
-        <p class="weekly-product__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>
-        <dl class="weekly-product__parameters">
-          <dt class="weekly-product__key">Цвет:</dt>
-          <dd class="weekly-product__value">«Тиффани»/серый</dd>
+        </div>
+        <div class="weekly-product__content">
+          <p class="weekly-product__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </p>
+          <dl class="weekly-product__parameters">
+            <dt class="weekly-product__key">Цвет:</dt>
+            <dd class="weekly-product__value">«Тиффани»/серый</dd>
 
-          <dt class="weekly-product__key">Диаметр:</dt>
-          <dd class="weekly-product__value">25 см</dd>
+            <dt class="weekly-product__key">Диаметр:</dt>
+            <dd class="weekly-product__value">25 см</dd>
 
-          <dt class="weekly-product__key">Высота:</dt>
-          <dd class="weekly-product__value">15 см</dd>
-        </dl>
-        <img class="weekly-product weekly-product--small" src="img/triple-set-mobile@1x.jpg" alt="Наши вязаные корзинки" width="260" height="315">
-        <img class="weekly-product weekly-product--medium" src="img/triple-set-tablet@1x.jpg" alt="Наши вязаные корзинки" width="333" height="404">
-        <img class="weekly-product weekly-product--large" src="img/triple-set-desktop@1x.jpg" alt="Наши вязаные корзинки" width="525" height="636">
-        <b class="weekly-product__price">Цена: 990 руб.</b>
-        <a class="weekly-product__order button" href="#">Заказать</a>
+            <dt class="weekly-product__key">Высота:</dt>
+            <dd class="weekly-product__value">15 см</dd>
+          </dl>
+          <img class="weekly-product__image weekly-product__image--small" src="img/triple-set-mobile@1x.jpg" alt="Наши вязаные корзинки" width="260" height="315">
+          <img class="weekly-product__image weekly-product__image--medium" src="img/triple-set-tablet@1x.jpg" alt="Наши вязаные корзинки" width="333" height="404">
+          <img class="weekly-product__image weekly-product__image--large" src="img/triple-set-desktop@1x.jpg" alt="Наши вязаные корзинки" width="525" height="636">
+          <div class="weekly-product__buy">
+            <b class="weekly-product__price">Цена: 990 руб.</b>
+            <a class="weekly-product__order button" href="#">Заказать</a>
+          </div>
+        </div>
       </section>
 
       <section class="information">
