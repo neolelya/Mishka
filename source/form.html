@@ -9,14 +9,12 @@
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo page-header__logo--small" href="index.html" aria-label="Логотип интернет-магазина Мишка">
-      <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="85.589px" height="35.034px">
-    </a>
-    <a class="page-header__logo page-header__logo--medium" href="index.html" aria-label="Логотип интернет-магазина Мишка">
-      <img src="img/logo-tablet.svg" alt="Логотип интернет-магазина Мишка" width="112.389px" height="46.087px">
-    </a>
-    <a class="page-header__logo page-header__logo--large" href="index.html" aria-label="Логотип интернет-магазина Мишка">
-      <img src="img/logo-desktop.svg" alt="Логотип интернет-магазина Мишка" width="148.051px" height="72.707px">
+    <a class="page-header__logo" href="index.html" aria-label="Логотип интернет-магазина Мишка">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg" >
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" sizes="112.389w, 46.087w">
+        <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="85.589" height="35.034">
+      </picture>
     </a>
     <button class="page-header__toggle" aria-label="Открыть меню">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="20.514px" height="20.512px" viewBox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512" xml:space="preserve">

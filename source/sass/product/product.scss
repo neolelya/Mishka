@@ -21,6 +21,11 @@
   margin: 0 auto;
 }
 
+.product__image img {
+  width: 100%;
+  height: auto;
+}
+
 .product__size {
   font-size: 13px;
   line-height: 30px;
@@ -67,8 +72,6 @@
   }
 
   .product__image {
-    width: 332px;
-    height: 332px;
     margin-right: 28px;
   }
 
@@ -114,10 +117,12 @@
   }
 
   .product__image {
-    width: 100%;
-    height: 463px;
     margin-right: 0;
     margin-left: 0;
+  }
+
+  .product__image img {
+    max-height: 463px;
   }
 
   .product__size {
