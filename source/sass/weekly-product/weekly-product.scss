@@ -11,7 +11,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: 0 0 url("../../img/bg-zigzag-line.svg") repeat-x;
+    background: center center url("../../img/bg-zigzag-line.svg") repeat-x;
     background-size: contain;
     width: 100%;
     height: 6px;
@@ -104,6 +104,16 @@
 
 .weekly-product__order {
   margin-top: 20px;
+}
+
+.weekly-product__order:hover,
+.weekly-product__order:focus {
+  color: $basic-background;
+  background-color: $minor-text;
+}
+
+.weekly-product__order:active {
+  color: #8d8d8d;
 }
 
 @media (min-width: $mobile-width) {

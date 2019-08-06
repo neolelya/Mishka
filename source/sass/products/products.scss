@@ -4,6 +4,15 @@
   padding: 20px 30px;
 }
 
+.products__item:hover,
+.products__item:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.products__item:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
 @media (min-width: $tablet-width) {
   .products {
     padding: 80px 50px 53px;
