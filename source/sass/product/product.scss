@@ -69,7 +69,12 @@
 .product__cart:hover,
 .product__cart:focus {
   opacity: 1;
-  color: $accent-color;
+  //fill: $accent-color;
+}
+
+.product__cart:hover svg,
+.product__cart:focus svg {
+  fill: $accent-color;
 }
 
 .product__cart:active {

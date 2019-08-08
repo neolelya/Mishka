@@ -10,8 +10,12 @@
   padding: 25px;
   border-bottom: 2px solid #e5e5e5;
 
-  &-item:hover path,
-  &-item:focus path {
+  &-item {
+    fill: $main-text;
+  }
+
+  &-item:hover,
+  &-item:focus {
     fill: $accent-color;
   }
 
