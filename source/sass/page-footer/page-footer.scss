@@ -10,6 +10,15 @@
   display: none;
 }
 
+.page-footer__logo:hover,
+.page-footer__logo:focus {
+  fill: $accent-color;
+}
+
+.page-footer__logo:active {
+  opacity: 0.3;
+}
+
 .page-footer__copyright {
   display: flex;
   justify-content: center;
@@ -23,6 +32,19 @@
   font-weight: 700;
   color: $main-text;
   margin-right: 25px;
+}
+
+.page-footer__text:active {
+  opacity: 0.3;
+}
+
+.page-footer__link:hover path,
+.page-footer__link:focus path {
+  fill: #46c1ae;
+}
+
+.page-footer__link:active path {
+  opacity: 0.3;
 }
 
 .page-footer__icon {

@@ -15,30 +15,44 @@
   text-decoration: none;
 }
 
-.main-nav__actions-item {
-  position: relative;
-}
-
-.main-nav__actions-item--search::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  background: url("../../img/icon-search.svg") no-repeat;
-  min-width: 18px;
-  min-height: 18px;
+.main-nav__actions-item svg {
   opacity: 0.2;
 }
 
-.main-nav__actions-item--cart::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  background: url("../../img/icon-cart.svg") no-repeat;
-  min-width: 21px;
-  min-height: 19px;
-  opacity: 0.2;
+.main-nav__actions-item--search svg {
+  margin-top: 4px;
+  margin-left: -45px;
+  margin-right: 27px;
+}
+
+.main-nav__actions-item--cart svg {
+  margin-top: 3px;
+  margin-left: -45px;
+  margin-right: 25px;
+}
+
+.main-nav__services-item:hover,
+.main-nav__services-item:focus,
+.main-nav__actions-item:hover,
+.main-nav__actions-item:focus,
+.main-nav__offers-item:hover,
+.main-nav__offers-item:focus,
+.main-nav__delivery-item:hover,
+.main-nav__delivery-item:focus {
+  opacity: 0.6;
+}
+
+.main-nav__actions-item:hover svg,
+.main-nav__actions-item:focus svg {
+  opacity: 1;
+  color: $accent-color;
+}
+
+.main-nav__services-item:active,
+.main-nav__actions-item:active,
+.main-nav__offers-item:active,
+.main-nav__delivery-item:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $mobile-width) {
@@ -50,7 +64,6 @@
   .main-nav__services-item,
   .main-nav__actions-item {
     display: flex;
-    flex-direction: column;
     padding-top: 28px;
     padding-left: 75px;
     padding-bottom: 26px;
@@ -100,46 +113,41 @@
     border-top: none;
 
     &--search {
-      min-width: 84px;
+      position: relative;
       padding-top: 30px;
       padding-bottom: 30px;
       font-size: 0;
 
-      &::before {
-        top: 37px;
-        left: 35px;
+      & svg {
+        margin-left: -50px;
       }
 
-      &::after {
+      &::before {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
+        top: -3px;
+        right: 85px;
         width: 1px;
-        min-height: 90px;
+        min-height: 95px;
         border-right: 1px solid $complementary-background;
       }
     }
 
     &--cart {
+      position: relative;
       min-width: 315px;
       padding-top: 30px;
       padding-bottom: 30px;
-      padding-left: 80px;
+      padding-left: 78px;
       font-size: 17px;
 
       &::before {
-        top: 35px;
-        left: 30px;
-      }
-
-      &::after {
         content: "";
         position: absolute;
-        top: 0;
+        top: -3px;
         left: 0;
         width: 1px;
-        min-height: 90px;
+        min-height: 95px;
         border-right: 1px solid $complementary-background;
       }
     }

@@ -17,9 +17,9 @@
       </picture>
     </a>
     <button class="page-header__toggle" aria-label="Открыть меню">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="20.514px" height="20.512px" viewBox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512" xml:space="preserve">
-            <polygon fill="#231F20" points="20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 "/>
-          </svg>
+      <svg width="20.514" height="20.512">
+        <use xlink:href="img/sprite.svg#menu-opener"></use>
+      </svg>
     </button>
     <nav class="main-nav">
       <div class="main-nav__services">
@@ -27,8 +27,14 @@
         <a class="main-nav__services-item" href="form.html">Вязание на заказ</a>
       </div>
       <div class="main-nav__actions">
-        <a class="main-nav__actions-item main-nav__actions-item--search" href="#">Поиск по сайту</a>
-        <a class="main-nav__actions-item main-nav__actions-item--cart" href="#">Корзина: пока пуста</a>
+        <a class="main-nav__actions-item main-nav__actions-item--search" href="#">
+          <svg width="17.6" height="17.6"><use xlink:href="img/sprite.svg#menu-search"></use></svg>
+          Поиск по сайту
+        </a>
+        <a class="main-nav__actions-item main-nav__actions-item--cart" href="#">
+          <svg width="20.294" height="18.849"><use xlink:href="img/sprite.svg#menu-cart"></use></svg>
+          Корзина: пока пуста
+        </a>
       </div>
       <div class="main-nav__offers">
         <a class="main-nav__offers-item main-nav__offers-item--new" href="#">Новые поступления</a>
@@ -46,37 +52,55 @@
 
     <div class="products">
       <article class="products__item product">
-        <h2 class="product__title">Зайчик-попрыгайчик</h2>
+        <h2 class="product__title"><a href="#">Зайчик-попрыгайчик</a></h2>
         <picture class="product__image">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+
           <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
           <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Наш вязаный Зайчик-попрыгайчик" width="260" height="195">
         </picture>
         <p class="product__size">Рост 30 см, вес 200 г</p>
         <b class="product__price">1 200 руб.</b>
-        <a class="product__cart" href="#" aria-label="Положить в корзину"></a>
+        <a class="product__cart" href="#" aria-label="Положить в корзину">
+          <svg width="20.294" height="18.849"><use xlink:href="img/sprite.svg#menu-cart"></use></svg>
+        </a>
       </article>
       <article class="products__item product">
-        <h2 class="product__title">Корзинка для белья</h2>
+        <h2 class="product__title"><a href="#">Корзинка для белья</a></h2>
         <picture class="product__image">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+
           <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
           <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Наш вязаный Зайчик-попрыгайчик" width="260" height="195">
         </picture>
         <p class="product__size">Диаметр 15 см, высота 10 см</p>
         <b class="product__price">690 руб.</b>
-        <a class="product__cart" href="#" aria-label="Положить в корзину"></a>
+        <a class="product__cart" href="#" aria-label="Положить в корзину">
+          <svg width="20.294" height="18.849"><use xlink:href="img/sprite.svg#menu-cart"></use></svg>
+        </a>
       </article>
       <article class="products__item product">
-        <h2 class="product__title">Большая корзинка для игрушек</h2>
+        <h2 class="product__title"><a href="#">Большая корзинка для игрушек</a></h2>
         <picture class="product__image">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+
           <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
           <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Наш вязаный Зайчик-попрыгайчик" width="260" height="195">
         </picture>
         <p class="product__size">Диаметр 30 см, высота 30 см</p>
         <b class="product__price">1 500 руб.</b>
-        <a class="product__cart" href="#" aria-label="Положить в корзину"></a>
+        <a class="product__cart" href="#" aria-label="Положить в корзину">
+          <svg width="20.294" height="18.849"><use xlink:href="img/sprite.svg#menu-cart"></use></svg>
+        </a>
       </article>
     </div>
 

@@ -12,23 +12,21 @@
 }
 
 .goods-kind__item {
+  display: block;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
+  text-decoration: none;
+  color: $basic-background;
   background-color: $accent-color;
   position: relative;
   width: 100%;
   height: 105px;
   padding: 25px 30px;
 
-  a {
-    display: block;
-    width: 50%;
-    color: $basic-background;
-    text-decoration: none;
-  }
 
   &--interior::after {
+    display: inline-block;
     position: absolute;
     content: "";
     top: 25%;
@@ -60,15 +58,13 @@
     flex-direction: row;
   }
 
+  .goods-kind li {
+    width: 50%;
+  }
+
   .goods-kind__item {
     font-size: 20px;
     line-height: 30px;
     min-height: 118px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .goods-kind__item a {
-    width: 30%;
   }
 }
