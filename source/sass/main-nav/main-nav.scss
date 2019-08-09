@@ -45,7 +45,7 @@
 .main-nav__actions-item:hover svg,
 .main-nav__actions-item:focus svg {
   opacity: 1;
-  color: $accent-color;
+  fill: $accent-color;
 }
 
 .main-nav__services-item:active,
@@ -113,13 +113,16 @@
     border-top: none;
 
     &--search {
+      display: block;
+      width: 85px;
       position: relative;
       padding-top: 30px;
       padding-bottom: 30px;
       font-size: 0;
 
       & svg {
-        margin-left: -50px;
+        margin-left: 33px;
+        margin-right: 0;
       }
 
       &::before {
