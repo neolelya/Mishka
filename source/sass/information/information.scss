@@ -3,7 +3,7 @@
 .information {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 30px 30px 0;
 }
 
 .information__title {
@@ -57,7 +57,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 500px;
+    height: 485px;
   }
 
   .information__list-item {

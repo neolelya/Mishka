@@ -2,6 +2,16 @@
 
 .main-nav {
   display: flex;
+  flex-direction: column;
+}
+
+.main-nav__services-item,
+.main-nav__actions-item {
+  display: flex;
+  padding-top: 28px;
+  padding-left: 75px;
+  padding-bottom: 26px;
+  border-top: 1px solid $border-color;
 }
 
 .main-nav__services-item,
@@ -55,25 +65,9 @@
   opacity: 0.3;
 }
 
-@media (min-width: $mobile-width) {
-  .main-nav {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .main-nav__services-item,
-  .main-nav__actions-item {
-    display: flex;
-    padding-top: 28px;
-    padding-left: 75px;
-    padding-bottom: 26px;
-    border-top: 1px solid $border-color;
-  }
-
-  .main-nav__offers,
-  .main-nav__delivery {
-    display: none;
-  }
+.main-nav__offers,
+.main-nav__delivery {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

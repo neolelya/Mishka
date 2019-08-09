@@ -3,8 +3,19 @@
 .page-header {
   position: relative;
   display: flex;
+  flex-direction: column;
   padding-top: 23px;
   border-bottom: 1px solid $border-color;
+}
+
+.page-header__logo {
+  align-self: center;
+  margin-bottom: 15px;
+}
+
+.page-header__logo img {
+  width: 100%;
+  height: auto;
 }
 
 .page-header__logo:hover,
@@ -16,30 +27,14 @@
   opacity: 0.3;
 }
 
-@media (min-width: $mobile-width) {
-  .page-header {
-    flex-direction: column;
-  }
-
-  .page-header__logo {
-    align-self: center;
-    margin-bottom: 15px;
-  }
-
-  .page-header__logo img {
-    width: 100%;
-    height: auto;
-  }
-
-  .page-header__toggle {
-    display: block;
-    position: absolute;
-    top: 23px;
-    right: 25px;
-    min-height: 36px;
-    border: none;
-    background-color: $basic-background;
-  }
+.page-header__toggle {
+  display: block;
+  position: absolute;
+  top: 23px;
+  right: 25px;
+  min-height: 36px;
+  border: none;
+  background-color: $basic-background;
 }
 
 @media (min-width: $tablet-width) {
