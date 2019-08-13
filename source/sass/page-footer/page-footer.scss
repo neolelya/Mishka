@@ -19,7 +19,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding-top: 7px;
+  padding-bottom: 20px;
 }
 
 .page-footer__text {
@@ -53,8 +54,9 @@
   .page-footer {
     display: flex;
     justify-content: space-between;
+    min-height: 143px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 43px;
   }
 
   .page-footer__logo {
@@ -65,5 +67,9 @@
 
   .page-footer__copyright {
     padding: 0;
+  }
+
+  .page-footer__icon {
+    vertical-align: middle;
   }
 }

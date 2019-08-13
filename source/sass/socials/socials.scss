@@ -7,28 +7,33 @@
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 0;
   border-bottom: 2px solid #e5e5e5;
 
   &-item {
+    padding-left: 20px;
+    padding-right: 20px;
     fill: $main-text;
   }
 
-  &-item:hover,
-  &-item:focus {
+  &-item:hover svg,
+  &-item:focus svg {
     fill: $accent-color;
   }
 
   &-item:active {
     opacity: 0.3;
   }
-
-  &-item:not(:last-child) {
-    margin-right: 35px;
-  }
 }
 
 @media (min-width: $tablet-width) {
+  .socials {
+    padding-top: 35px;
+    margin-left: 75px;
+  }
+
   .socials__list {
     padding-left: 0;
     padding-right: 0;

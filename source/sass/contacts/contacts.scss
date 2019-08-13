@@ -1,0 +1,153 @@
+@import "../variables";
+
+.contacts {
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+.contacts__header {
+  margin: 0 30px 25px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $main-text;
+}
+
+.contacts__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 30px 35px;
+  line-height: 30px;
+}
+
+.contacts__key {
+  margin-left: 0;
+  text-transform: lowercase;
+  width: 30%;
+}
+
+.contacts__value:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.contacts__value--link {
+  border-bottom: 1px solid #62d1ba;
+}
+
+.contacts__value--address {
+  width: 60%;
+}
+
+.contacts__map {
+  display: block;
+  margin-bottom: 37px;
+}
+
+.contacts__map img {
+  width: 100%;
+  height: auto;
+}
+
+.contacts__write {
+  display: block;
+  margin: 0 auto 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .contacts__header {
+    position: relative;
+    margin-right: 50px;
+    margin-left: 45px;
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: 700;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -15px;
+      right: 0;
+      background: 0 0 url("../../img/icon-flag.svg") no-repeat;
+      width: 50px;
+      height: 80px;
+    }
+  }
+
+  .contacts__content {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 55px;
+    font-size: 17px;
+  }
+
+  .contacts__key {
+    width: 78px;
+  }
+
+  .contacts__value {
+    width: 230px;
+  }
+
+  .contacts__value--link {
+    height: 30px;
+    width: 205px;
+    margin-right: 50px;
+  }
+
+  .contacts__map {
+    margin-bottom: 50px;
+  }
+
+  .contacts__write {
+    width: 226px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-left: 170px;
+    padding-bottom: 75px;
+  }
+
+  .contacts__header {
+    width: 40%;
+    margin-top: 80px;
+    margin-left: 0;
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: 700;
+
+    &::after {
+      top: -10px;
+      left: -107px;
+    }
+  }
+
+  .contacts__content {
+    margin-left: 5px;
+    margin-bottom: 78px;
+    width: 40%;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 70px;
+    right: 0;
+  }
+
+  .contacts__write {
+    width: 26%;
+    margin-left: 5px;
+  }
+}
