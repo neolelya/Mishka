@@ -24,7 +24,6 @@
   height: 105px;
   padding: 25px 30px;
 
-
   &--interior::after {
     display: inline-block;
     position: absolute;
@@ -50,6 +49,37 @@
       min-height: 60px;
       opacity: 0.3;
     }
+  }
+}
+
+.goods-kind__item:hover,
+.goods-kind__item:focus {
+  height: 110px;
+}
+
+.goods-kind__item--interior:hover,
+.goods-kind__item--interior:focus {
+  background-color: #59d5bc;
+}
+
+.goods-kind__item--toys:hover,
+.goods-kind__item--toys:focus {
+  background-color: #46c1ae;
+}
+
+.goods-kind__item--interior:active {
+  color: #97e2d2;
+
+  &::after {
+    opacity: 0.2;
+  }
+}
+
+.goods-kind__item--toys:active {
+  color: #8dd5c9;
+
+  &::after {
+    opacity: 0.2;
   }
 }
 

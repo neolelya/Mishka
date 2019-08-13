@@ -39,6 +39,16 @@
   }
 }
 
+.choice__value:hover,
+.choice__value:focus {
+  cursor: pointer;
+  border: 2px solid $minor-text;
+}
+
+.choice__value:active {
+  border-color: $accent-color;
+}
+
 .choice__add {
   display: block;
   color: $basic-background;

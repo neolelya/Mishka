@@ -1,7 +1,7 @@
 @import "../variables";
 
 .products {
-  padding: 20px 30px;
+  padding: 30px;
 }
 
 .products__item:hover,
@@ -23,6 +23,7 @@
   .products {
     display: flex;
     width: 100%;
-    padding: 130px 50px 55px 50px;
+    align-items: stretch;
+    padding: 126px 50px 55px 50px;
   }
 }

@@ -105,16 +105,6 @@
   margin-top: 20px;
 }
 
-.weekly-product__order:hover,
-.weekly-product__order:focus {
-  color: $basic-background;
-  background-color: $minor-text;
-}
-
-.weekly-product__order:active {
-  color: #8d8d8d;
-}
-
 @media (min-width: $mobile-width) {
   .weekly-product__content {
     flex-direction: column;
