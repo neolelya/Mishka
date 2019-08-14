@@ -12,3 +12,13 @@
   border: 2px solid $minor-text;
   padding: 15px 30px;
 }
+
+.button:hover,
+.button:focus {
+  color: $basic-background;
+  background-color: $minor-text;
+}
+
+.button:active {
+  color: #8d8d8d;
+}

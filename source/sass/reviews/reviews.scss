@@ -58,6 +58,15 @@
   border: 1px solid $border-color;
 }
 
+.reviews__switcher:hover,
+.reviews__switcher:focus {
+  opacity: 0.6;
+}
+
+.reviews__switcher:active {
+  opacity: 0.3;
+}
+
 .reviews__write {
   display: block;
   width: 100%;

@@ -34,6 +34,16 @@
   border-bottom: 1px solid #62d1ba;
 }
 
+.contacts__value--link:hover,
+.contacts__value--link:focus {
+  cursor: pointer;
+  color: #46c1ae;
+}
+
+.contacts__value--link:active {
+  opacity: 0.3;
+}
+
 .contacts__value--address {
   width: 60%;
 }
