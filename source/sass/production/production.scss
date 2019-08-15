@@ -79,7 +79,6 @@
 
 .production__order {
   display: block;
-  width: auto;
   line-height: 16px;
   padding: 16px 10px;
   margin-left: 32px;
@@ -130,7 +129,6 @@
   }
 
   .production__order {
-    width: auto;
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -139,7 +137,7 @@
 @media (min-width: $desktop-width) {
   .production {
     align-items: flex-end;
-    width: 365px;
+    width: auto;
     min-height: 455px;
     margin: 0 50px 106px 731px;
   }
@@ -174,8 +172,8 @@
   }
 
   .production__order {
-    width: 63%;
-    margin-left: 80px;
-    margin-right: 53px;
+    width: 65%;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
