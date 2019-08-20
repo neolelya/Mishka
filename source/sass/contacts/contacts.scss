@@ -21,31 +21,34 @@
 }
 
 .contacts__key {
-  margin-left: 0;
   text-transform: lowercase;
   width: 30%;
+}
+
+.contacts__value {
+  width: 60%;
+  margin-left: 0;
 }
 
 .contacts__value:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.contacts__value--link {
+.contacts__value a {
+  width: 180px;
+  padding-bottom: 6px;
+  text-decoration: none;
+  color: $minor-text;
   border-bottom: 1px solid #62d1ba;
 }
 
-.contacts__value--link:hover,
-.contacts__value--link:focus {
-  cursor: pointer;
+.contacts__value a:hover,
+.contacts__value a:focus {
   color: #46c1ae;
 }
 
-.contacts__value--link:active {
+.contacts__value a:active {
   opacity: 0.3;
-}
-
-.contacts__value--address {
-  width: 60%;
 }
 
 .contacts__map {
@@ -60,7 +63,7 @@
 
 .contacts__write {
   display: block;
-  margin: 0 auto 28px;
+  margin: 0 30px 28px;
 }
 
 @media (min-width: $tablet-width) {
@@ -73,7 +76,7 @@
     position: relative;
     margin-right: 50px;
     margin-left: 45px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     font-size: 43px;
     line-height: 50px;
     font-weight: 700;
@@ -83,7 +86,7 @@
       position: absolute;
       top: -15px;
       right: 0;
-      background: 0 0 url("../../img/icon-flag.svg") no-repeat;
+      background: 0 0 url("../img/icon-flag.svg") no-repeat;
       width: 50px;
       height: 80px;
     }
@@ -97,17 +100,15 @@
   }
 
   .contacts__key {
-    width: 78px;
+    width: 12%;
   }
 
   .contacts__value {
-    width: 230px;
+    width: 37%;
   }
 
-  .contacts__value--link {
-    height: 30px;
-    width: 205px;
-    margin-right: 50px;
+  .contacts__value a {
+    padding-bottom: 3px;
   }
 
   .contacts__map {
@@ -118,6 +119,8 @@
     width: 226px;
     padding-top: 14px;
     padding-bottom: 14px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -148,6 +151,14 @@
     margin-left: 5px;
     margin-bottom: 78px;
     width: 40%;
+  }
+
+  .contacts__key {
+    width: 22%;
+  }
+
+  .contacts__value {
+    width: 70%;
   }
 
   .contacts__map {

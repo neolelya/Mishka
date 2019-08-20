@@ -13,6 +13,7 @@
 
 .page-footer__logo:active {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .page-footer__copyright {

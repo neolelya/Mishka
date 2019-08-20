@@ -84,25 +84,11 @@
   border-radius: 50%;
 }
 
-.form__type-label:hover::before,
-.form__type-label:focus::before,
-.form__color-label:hover::before,
-.form__color-label:focus::before {
-  border-color: $accent-color;
-}
-
 .form__type-label:active::before,
 .form__type-radio:checked + .form__type-label::before,
 .form__color-label:active::before,
 .form__color-checkbox:checked + .form__color-label::before {
   border-color: #c7c7c7;
-}
-
-.form__type-radio:checked + label::after,
-.form__color-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 15px;
 }
 
 .form__type-radio:checked + label::after {
@@ -112,6 +98,21 @@
   border: 2px solid $accent-color;
   border-radius: 50%;
   background-color: $accent-color;
+}
+
+.form__type-radio:checked + label::after,
+.form__color-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+}
+
+.form__type-radio:hover + .form__type-label::before,
+.form__type-radio:focus + .form__type-label::before,
+.form__color-checkbox:hover + .form__color-label::before,
+.form__color-checkbox:focus + .form__color-label::before {
+  outline: 1px solid $accent-color;
+  border-color: $accent-color;
 }
 
 .form__color-title {
@@ -136,7 +137,7 @@
   left: 8px;
   width: 23px;
   height: 16px;
-  background: 0 0 url("../../img/icon-tick.svg") no-repeat;
+  background: 0 0 url("../img/icon-tick.svg") no-repeat;
   background-size: contain;
 }
 
@@ -517,7 +518,7 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    padding-top: 120px;
+    padding-top: 122px;
   }
 
   .form__text {
@@ -560,7 +561,21 @@
   }
 
   .form__name {
-    padding-top: 62px;
+    padding-top: 60px;
+
+    & p {
+      padding-top: 0;
+      margin-bottom: 36px;
+    }
+
+    & label {
+      padding-top: 5px;
+    }
+
+    & input {
+      height: 40px;
+      padding-bottom: 12px;
+    }
   }
 
   .form__phone {

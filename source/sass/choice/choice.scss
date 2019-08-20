@@ -33,19 +33,16 @@
   text-transform: uppercase;
   padding: 15px 30px;
   border: 2px solid $border-color;
-
-  &--checked {
-    border-color: $accent-color;
-  }
 }
 
-.choice__value:hover,
-.choice__value:focus {
+.choice__field:hover + label,
+.choice__field:focus + label {
   cursor: pointer;
   border: 2px solid $minor-text;
 }
 
-.choice__value:active {
+.choice__field:active + .choice__value,
+.choice__field:checked + .choice__value {
   border-color: $accent-color;
 }
 
@@ -55,6 +52,11 @@
   border-color: $accent-color;
   background-color: $accent-color;
   margin-top: 30px;
+
+  &:hover,
+  &:focus {
+    border-color: $minor-text;
+  }
 }
 
 @media (min-width: $tablet-width) {
