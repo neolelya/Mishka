@@ -190,12 +190,18 @@
   border-color: $accent-color;
 }
 
+.form__phone p,
+.form__email p {
+  position: relative;
+  margin-bottom: 18px;
+}
+
 .form__phone {
   padding-bottom: 15px;
 
   & svg {
     position: absolute;
-    top: 0;
+    top: 35px;
     right: 8px;
     opacity: 0.2;
   }
@@ -203,12 +209,6 @@
 
 .form__phone-title,
 .form__email-title {
-  margin-bottom: 18px;
-}
-
-.form__phone p,
-.form__email p {
-  position: relative;
   margin-bottom: 18px;
 }
 
@@ -257,7 +257,7 @@
   & svg {
     opacity: 0.2;
     position: absolute;
-    top: 0;
+    top: 35px;
     right: 7px;
   }
 }
@@ -417,21 +417,14 @@
   }
 
   .form__name {
-    padding: 55px 50px 45px 217px;
-
-    & p {
-      margin-bottom: 30px;
-    }
-  }
-
-  .form__name,
-  .form__phone {
     position: relative;
+    padding: 55px 50px 45px 217px;
 
     & p {
       display: flex;
       flex-direction: row;
       width: 100%;
+      margin-bottom: 30px;
     }
   }
 
@@ -445,6 +438,7 @@
   }
 
   .form__name-field {
+    min-height: 46px; //для FF
     display: flex;
     flex-grow: 1;
     padding-left: 15px;
@@ -458,10 +452,17 @@
   }
 
   .form__phone {
+    position: relative;
     padding: 63px 50px 0 217px;
 
+    & p {
+      position: static;
+      margin-bottom: 0;
+    }
+
     & svg {
-      margin-right: 20px;
+      top: 60px;
+      right: 75px;
     }
   }
 
@@ -476,30 +477,44 @@
 
   .form__email {
     position: relative;
-    padding: 13px 50px 32px 217px;
+    padding: 30px 50px 50px 217px;
+
+    & p {
+      position: static;
+      margin-bottom: 0;
+    }
 
     & svg {
-      margin-right: 16px;
+      top: 35px;
+      right: 75px;
     }
   }
 
   .form__email-title {
-    top: 20px;
+    top: 40px;
   }
 
   .form__email-field {
     padding-left: 17px;
     padding-right: 60px;
     font-size: 19px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 
   .form__addition {
     position: relative;
-    padding: 48px 50px 46px 217px;
+    padding: 50px 50px 46px 217px;
   }
 
   .form__addition-title {
-    top: 65px;
+    top: 70px;
+  }
+
+  .form__addition-field::placeholder {
+    font-size: 19px;
   }
 
   .form__button-wrapper {
@@ -566,24 +581,19 @@
     left: 110px;
   }
 
-  .form__name-field {
-    min-height: 46px; //для FF
-  }
-
   .form__phone {
     padding-top: 64px;
   }
 
   .form__phone svg {
-    margin-right: 0;
+    right: 235px;
   }
 
   .form__email {
-    padding-top: 13px;
-    padding-bottom: 34px;
+    padding-top: 30px;
 
     & svg {
-      margin-right: 0;
+      right: 230px;
     }
   }
 
