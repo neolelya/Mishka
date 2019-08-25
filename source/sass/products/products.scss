@@ -24,6 +24,7 @@
     display: flex;
     width: 100%;
     align-items: stretch;
-    padding: 126px 50px 55px 50px;
+    padding: 130px 50px 55px 50px;
+    overflow: hidden; //для IE11
   }
 }

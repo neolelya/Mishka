@@ -61,7 +61,8 @@
 .form__type-label,
 .form__color-label {
   position: relative;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   padding-left: 62px;
   font-size: 17px;
   line-height: 18px;
@@ -84,25 +85,11 @@
   border-radius: 50%;
 }
 
-.form__type-label:hover::before,
-.form__type-label:focus::before,
-.form__color-label:hover::before,
-.form__color-label:focus::before {
-  border-color: $accent-color;
-}
-
 .form__type-label:active::before,
 .form__type-radio:checked + .form__type-label::before,
 .form__color-label:active::before,
 .form__color-checkbox:checked + .form__color-label::before {
   border-color: #c7c7c7;
-}
-
-.form__type-radio:checked + label::after,
-.form__color-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 15px;
 }
 
 .form__type-radio:checked + label::after {
@@ -112,6 +99,21 @@
   border: 2px solid $accent-color;
   border-radius: 50%;
   background-color: $accent-color;
+}
+
+.form__type-radio:checked + label::after,
+.form__color-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+}
+
+.form__type-radio:hover + .form__type-label::before,
+.form__type-radio:focus + .form__type-label::before,
+.form__color-checkbox:hover + .form__color-label::before,
+.form__color-checkbox:focus + .form__color-label::before {
+  outline: 1px solid $accent-color;
+  border-color: $accent-color;
 }
 
 .form__color-title {
@@ -136,7 +138,7 @@
   left: 8px;
   width: 23px;
   height: 16px;
-  background: 0 0 url("../../img/icon-tick.svg") no-repeat;
+  background: 0 0 url("../img/icon-tick.svg") no-repeat;
   background-size: contain;
 }
 
@@ -188,12 +190,18 @@
   border-color: $accent-color;
 }
 
+.form__phone p,
+.form__email p {
+  position: relative;
+  margin-bottom: 18px;
+}
+
 .form__phone {
   padding-bottom: 15px;
 
   & svg {
     position: absolute;
-    top: 0;
+    top: 35px;
     right: 8px;
     opacity: 0.2;
   }
@@ -204,28 +212,24 @@
   margin-bottom: 18px;
 }
 
-.form__phone p,
-.form__email p {
-  position: relative;
-  margin-bottom: 18px;
-}
-
 .form__phone-field,
 .form__email-field {
   color: $main-text;
   width: 100%;
   padding-top: 5px;
+  padding-right: 40px;
   padding-bottom: 16px;
   border-left: none;
   border-right: none;
   border-top: none;
   border-bottom: 2px solid $main-text;
   background-color: transparent;
+}
 
-  &::placeholder {
-    opacity: 0.3;
-    font-size: 19px;
-  }
+.form__phone-field::placeholder {
+  opacity: 0.3;
+  font-size: 19px;
+  line-height: 18px;
 }
 
 .form__phone-field:hover,
@@ -253,7 +257,7 @@
   & svg {
     opacity: 0.2;
     position: absolute;
-    top: 0;
+    top: 35px;
     right: 7px;
   }
 }
@@ -261,6 +265,7 @@
 .form__email-field::placeholder {
   opacity: 0.3;
   font-size: 17px;
+  line-height: 18px;
 }
 
 .form__addition {
@@ -412,38 +417,32 @@
   }
 
   .form__name {
-    padding: 60px 50px 45px 217px;
-
-    & p {
-      padding-top: 5px;
-      margin-bottom: 33px;
-    }
-  }
-
-  .form__name,
-  .form__phone {
     position: relative;
+    padding: 55px 50px 45px 217px;
 
     & p {
       display: flex;
       flex-direction: row;
       width: 100%;
+      margin-bottom: 30px;
     }
   }
 
   .form__name-label {
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 0;
     margin-right: 25px;
     font-size: 19px;
     line-height: 18px;
   }
 
   .form__name-field {
+    min-height: 46px; //для FF
     display: flex;
     flex-grow: 1;
-    padding-top: 0;
     padding-left: 15px;
-    padding-bottom: 8px;
+    padding-bottom: 12px;
     font-size: 19px;
     line-height: 18px;
 
@@ -453,10 +452,17 @@
   }
 
   .form__phone {
-    padding: 68px 50px 0 217px;
+    position: relative;
+    padding: 63px 50px 0 217px;
+
+    & p {
+      position: static;
+      margin-bottom: 0;
+    }
 
     & svg {
-      margin-right: 20px;
+      top: 60px;
+      right: 75px;
     }
   }
 
@@ -466,33 +472,49 @@
 
   .form__phone-field {
     padding-left: 15px;
+    padding-right: 60px;
   }
 
   .form__email {
     position: relative;
-    padding: 13px 50px 32px 217px;
+    padding: 30px 50px 50px 217px;
+
+    & p {
+      position: static;
+      margin-bottom: 0;
+    }
 
     & svg {
-      margin-right: 16px;
+      top: 35px;
+      right: 75px;
     }
   }
 
   .form__email-title {
-    top: 20px;
+    top: 40px;
   }
 
   .form__email-field {
     padding-left: 17px;
+    padding-right: 60px;
     font-size: 19px;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 
   .form__addition {
     position: relative;
-    padding: 48px 50px 46px 217px;
+    padding: 50px 50px 46px 217px;
   }
 
   .form__addition-title {
-    top: 65px;
+    top: 70px;
+  }
+
+  .form__addition-field::placeholder {
+    font-size: 19px;
   }
 
   .form__button-wrapper {
@@ -517,7 +539,7 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    padding-top: 120px;
+    padding-top: 122px;
   }
 
   .form__text {
@@ -559,24 +581,19 @@
     left: 110px;
   }
 
-  .form__name {
-    padding-top: 62px;
-  }
-
   .form__phone {
     padding-top: 64px;
   }
 
   .form__phone svg {
-    margin-right: 0;
+    right: 235px;
   }
 
   .form__email {
-    padding-top: 15px;
-    padding-bottom: 34px;
+    padding-top: 30px;
 
     & svg {
-      margin-right: 0;
+      right: 230px;
     }
   }
 

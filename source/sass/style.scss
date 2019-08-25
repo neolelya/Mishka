@@ -49,6 +49,12 @@ body {
   min-width: $desktop-width;
 }
 
+
+//Для активных состояний ссылок в IE11
+a > * {
+  pointer-events: none;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {

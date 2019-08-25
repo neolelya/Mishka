@@ -123,26 +123,26 @@
   .product__cart {
     position: absolute;
     bottom: 25px;
-    right: 0;
+    right: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product {
     width: 30%;
-    min-height: 660px;
+    height: auto;
     padding-right: 0;
     margin-bottom: 0;
 
     &:not(:last-child) {
-      margin-right: 50px;
+      margin-right: 52px;
       margin-bottom: 0;
     }
   }
 
   .product__title {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 22px;
     padding-right: 50px;
     padding-left: 27px;
   }
@@ -171,12 +171,12 @@
   .product__price {
     font-size: 17px;
     line-height: 24px;
-    margin: 25px 27px 23px;
+    padding-top: 25px;
+    margin: auto 27px 25px 27px;
   }
 
   .product__cart {
     position: absolute;
-    bottom: 25px;
-    right: 0;
+    bottom: 30px;
   }
 }

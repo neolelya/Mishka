@@ -79,6 +79,7 @@
     padding-top: 60px;
     padding-left: 225px;
     padding-right: 225px;
+    overflow: hidden; //для IE11
   }
 
   .information__title {
@@ -90,13 +91,12 @@
   .information__list-item {
     font-size: 20px;
     line-height: 22px;
-    width: 310px;
     padding-top: 0;
     padding-bottom: 0;
   }
 
   .information__list-item-text {
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 65px;
   }
 }

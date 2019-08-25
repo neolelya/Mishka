@@ -26,10 +26,9 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      background: 0 0 url("../../img/bg-zigzag-fill.svg") repeat-x;
-      background-size: cover;
+      background: 0 0 url("../img/bg-zigzag-fill.svg") repeat-x;
       width: 100%;
-      min-height: 10px;
+      min-height: 14px;
     }
   }
 }
@@ -40,9 +39,5 @@
     line-height: 57px;
     min-height: 250px;
     margin-top: 0;
-
-    &::after {
-      min-height: 14px;
-    }
   }
 }
