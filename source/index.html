@@ -24,8 +24,11 @@
           <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="36">
         </picture>
       </a>
-      <button class="page-header__toggle" aria-label="Открыть меню">
-        <svg width="20.514" height="20.512">
+      <button class="page-header__toggle page-header__toggle--open" aria-label="Открыть меню">
+        <svg class="page-header__close" width="20.514" height="20.512">
+          <use xlink:href="#icon-menu-close"></use>
+        </svg>
+        <svg class="page-header__open" width="19.95" height="14">
           <use xlink:href="#icon-menu-open"></use>
         </svg>
       </button>
@@ -97,7 +100,7 @@
           </picture>
             <div class="weekly-product__buy">
             <b class="weekly-product__price">Цена: 990 руб.</b>
-            <a class="weekly-product__order button" href="#">Заказать</a>
+            <a class="weekly-product__order button modal-link" href="add-to-cart.html">Заказать</a>
           </div>
         </div>
       </section>
@@ -174,15 +177,18 @@
           <dt class="contacts__key">Адрес:</dt>
           <dd class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
         </dl>
-        <picture class="contacts__map">
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-desktop@2x.webp 2x">
+        <div class="contacts__map-wrapper">
+          <div class="contacts__ymap"></div>
+          <picture class="contacts__map">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-desktop@2x.webp 2x">
 
-          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Наш офис по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
-        </picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Наш офис по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
+          </picture>
+        </div>
         <a class="contacts__write button" href="#">Напишите нам</a>
       </section>
     </main>
@@ -247,6 +253,11 @@
         <a class="choice__add button" href="#">Добавить</a>
       </section>
     </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=3caee1e7-ea07-485f-8706-60d069483efe&lang=ru_RU">
+    </script>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>

@@ -35,6 +35,19 @@
   min-height: 36px;
   border: none;
   background-color: $basic-background;
+  cursor: pointer;
+
+  &--open .page-header__open {
+    display: none;
+  }
+
+  &--close .page-header__close {
+    display: none;
+  }
+
+  &--close + .main-nav {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
