@@ -1,6 +1,6 @@
 var toggle = document.querySelector(".page-header__toggle");
 var links = document.querySelectorAll(".modal-link");
-var modal = document.querySelector(".modal");
+var modal = document.querySelector(".overlay");
 
 links.forEach(function (item) {
   item.addEventListener("click",
@@ -21,7 +21,7 @@ window.addEventListener("keydown", function (evt) {
 if (window.modal) {
   modal.addEventListener("click",
     function (evt) {
-      if (evt.target.classList.contains("modal") || evt.target.classList.contains("button")) {
+      if (evt.target.classList.contains("overlay") || evt.target.classList.contains("button")) {
         evt.preventDefault();
         modal.classList.remove("modal-show");
       }
