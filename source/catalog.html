@@ -24,8 +24,11 @@
         <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="36">
       </picture>
     </a>
-    <button class="page-header__toggle" aria-label="Открыть меню">
-      <svg width="20.514" height="20.512">
+    <button class="page-header__toggle page-header__toggle--open" aria-label="Открыть меню">
+      <svg class="page-header__close" width="20.514" height="20.512">
+        <use xlink:href="#icon-menu-close"></use>
+      </svg>
+      <svg class="page-header__open" width="19.95" height="14">
         <use xlink:href="#icon-menu-open"></use>
       </svg>
     </button>
@@ -74,7 +77,7 @@
         </a>
         <p class="product__size">Рост 30 см, вес 200 г</p>
         <b class="product__price">1 200 руб.</b>
-        <a class="product__cart" href="#" aria-label="Положить в корзину">
+        <a class="product__cart modal-link" href="add-to-cart.html" aria-label="Положить в корзину">
           <svg width="20.294" height="18.849"><use xlink:href="#icon-cart"></use></svg>
         </a>
       </article>
@@ -93,7 +96,7 @@
         </a>
         <p class="product__size">Диаметр 15 см, высота 10 см</p>
         <b class="product__price">690 руб.</b>
-        <a class="product__cart" href="#" aria-label="Положить в корзину">
+        <a class="product__cart modal-link" href="add-to-cart.html" aria-label="Положить в корзину">
           <svg width="20.294" height="18.849"><use xlink:href="#icon-cart"></use></svg>
         </a>
       </article>
@@ -112,10 +115,8 @@
         </a>
         <p class="product__size product__size--double-title">Диаметр 30 см, высота 30 см</p>
         <b class="product__price">1 500 руб.</b>
-        <a class="product__cart" href="#" aria-label="Положить в корзину">
-          <svg width="20.294" height="18.849">
-            <use xlink:href="#icon-cart"></use>
-          </svg>
+        <a class="product__cart modal-link" href="add-to-cart.html" aria-label="Положить в корзину">
+          <svg width="20.294" height="18.849"><use xlink:href="#icon-cart"></use></svg>
         </a>
       </article>
     </div>
@@ -193,19 +194,21 @@
     </div>
   </footer>
 
-  <div class="modal">
-    <section class="choice">
-      <h2 class="choice__title">Добавить в корзину</h2>
-      <p class="choice__text">Выберите размер:</p>
-      <input class="choice__field visually-hidden" id="choice-s" name="choice-field" value="s" type="radio" checked>
-      <label class="choice__value" for="choice-s">S</label>
-      <input class="choice__field visually-hidden" id="choice-m" name="choice-field" value="m" type="radio">
-      <label class="choice__value" for="choice-m">M</label>
-      <input class="choice__field visually-hidden" id="choice-l" name="choice-field" value="l" type="radio">
-      <label class="choice__value" for="choice-l">L</label>
-      <a class="choice__add button" href="#">Добавить</a>
+  <div class="overlay">
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <input class="modal__field visually-hidden" id="choice-s" name="choice-field" value="s" type="radio" checked>
+      <label class="modal__value" for="choice-s">S</label>
+      <input class="modal__field visually-hidden" id="choice-m" name="choice-field" value="m" type="radio">
+      <label class="modal__value" for="choice-m">M</label>
+      <input class="modal__field visually-hidden" id="choice-l" name="choice-field" value="l" type="radio">
+      <label class="modal__value" for="choice-l">L</label>
+      <a class="modal__add button" href="#">Добавить</a>
     </section>
   </div>
+
+  <script src="js/script.js"></script>
 
 </body>
 </html>
