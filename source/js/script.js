@@ -18,11 +18,12 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-if (window.modal) {
+if (modal) {
   modal.addEventListener("click",
     function (evt) {
       if (evt.target.classList.contains("overlay") || evt.target.classList.contains("button")) {
         evt.preventDefault();
+        console.log("Rere");
         modal.classList.remove("modal-show");
       }
     });
