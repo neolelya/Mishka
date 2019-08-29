@@ -124,7 +124,7 @@
     padding-bottom: 3px;
   }
 
-  .contacts__map {
+  .contacts__map-wrapper {
     margin-bottom: 50px;
   }
 
@@ -174,10 +174,11 @@
     width: 70%;
   }
 
-  .contacts__map {
+  .contacts__map-wrapper {
     position: absolute;
     top: 70px;
     right: 0;
+    width: 50%;
   }
 
   .contacts__write {
