@@ -18,8 +18,8 @@
     position: relative;
     font-size: 43px;
     line-height: 50px;
-    padding-top: 95px;
-    border-top: 1px solid $border-color;
+    padding-top: 40px;
+    padding-bottom: 60px;
 
     &::after {
       content: "";
@@ -37,7 +37,7 @@
   .page-main__header {
     font-size: 53px;
     line-height: 57px;
-    min-height: 250px;
+    min-height: 196px;
     margin-top: 0;
   }
 }

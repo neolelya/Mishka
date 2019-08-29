@@ -24,6 +24,13 @@
   height: 105px;
   padding: 25px 30px;
 
+  & span {
+    display: block;
+    width: 293px;
+    height: 68px;
+    overflow: hidden;
+  }
+
   &--interior::after {
     display: inline-block;
     position: absolute;

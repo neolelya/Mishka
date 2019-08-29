@@ -33,6 +33,8 @@
 }
 
 .product__image {
+  width: 100%;
+  max-width: 334px;
   order: -1;
   margin: 0 auto;
 }
@@ -53,43 +55,43 @@
 }
 
 .product__price {
-  font-weight: 700;
-  color: $main-text;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   margin: 20px 27px 28px;
 }
 
-.product__cart {
-  width: 21px;
-  height: 19px;
-  margin-top: 23px;
-  margin-left: auto;
-  margin-right: 25px;
+.product__price-value {
+  font-weight: 700;
+  color: $main-text;
+}
+
+.product__price-icon {
   opacity: 0.2;
 }
 
-.product__cart:hover,
-.product__cart:focus {
+.product__price-icon:hover,
+.product__price-icon:focus {
   opacity: 1;
 }
 
-.product__cart:hover svg,
-.product__cart:focus svg {
+.product__price-icon:hover svg,
+.product__price-icon:focus svg {
   fill: $accent-color;
 }
 
-.product__cart:active {
+.product__price-icon:active {
   opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .product {
-    position: relative;
     flex-direction: column;
-    height: 334px;
+    height: 336px;
     padding-right: 32px;
 
     &:not(:last-child) {
-      margin-bottom: 55px;
+      margin-bottom: 50px;
     }
   }
 
@@ -102,6 +104,7 @@
   }
 
   .product__image {
+    width: auto;
     margin-right: 28px;
   }
 
@@ -109,21 +112,19 @@
     flex-grow: 1;
     font-size: 15px;
     line-height: 30px;
-    width: 40%;
+    width: 43%;
     margin-left: 0;
     margin-right: 0;
   }
 
   .product__price {
-    font-size: 17px;
-    line-height: 24px;
+    width: 43%;
     margin: 25px 0 23px;
   }
 
-  .product__cart {
-    position: absolute;
-    bottom: 25px;
-    right: 5px;
+  .product__price-value {
+    font-size: 17px;
+    line-height: 24px;
   }
 }
 
@@ -131,12 +132,17 @@
   .product {
     width: 30%;
     height: auto;
+    min-height: 660px;
     padding-right: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 52px;
+      margin-bottom: 20px;
+    }
 
     &:not(:last-child) {
-      margin-right: 52px;
-      margin-bottom: 0;
+      margin-bottom: 20px;
     }
   }
 
@@ -148,8 +154,8 @@
   }
 
   .product__image {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .product__image img {
@@ -169,14 +175,13 @@
   }
 
   .product__price {
-    font-size: 17px;
-    line-height: 24px;
+    width: 82%;
     padding-top: 25px;
     margin: auto 27px 25px 27px;
   }
 
-  .product__cart {
-    position: absolute;
-    bottom: 30px;
+  .product__price-value {
+    font-size: 17px;
+    line-height: 24px;
   }
 }

@@ -2,6 +2,7 @@
 
 .products {
   padding: 30px;
+  overflow: hidden; //для IE
 }
 
 .products__item:hover,
@@ -15,16 +16,16 @@
 
 @media (min-width: $tablet-width) {
   .products {
-    padding: 80px 50px 53px;
+    padding: 70px 50px 55px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .products {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
     align-items: stretch;
-    padding: 130px 50px 55px 50px;
-    overflow: hidden; //для IE11
+    width: 100%;
+    padding: 130px 50px 35px 50px;
   }
 }

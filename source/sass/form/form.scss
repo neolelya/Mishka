@@ -190,14 +190,14 @@
   border-color: $accent-color;
 }
 
-.form__phone p,
-.form__email p {
+.form__phone-wrapper,
+.form__email-wrapper {
   position: relative;
   margin-bottom: 18px;
 }
 
 .form__phone {
-  padding-bottom: 15px;
+  padding-bottom: 32px;
 
   & svg {
     position: absolute;
@@ -252,7 +252,7 @@
 }
 
 .form__email {
-  padding-bottom: 14px;
+  padding-bottom: 34px;
 
   & svg {
     opacity: 0.2;
@@ -307,7 +307,7 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    padding-top: 75px;
+    padding-top: 65px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -320,12 +320,16 @@
   }
 
   .form__type {
-    position: relative;
-    padding: 33px 50px 30px 217px;
+    display: flex;
+    padding: 33px 50px 30px 50px;
 
     & p {
       margin-bottom: 26px;
     }
+  }
+
+  .form__type-wrapper {
+    width: 75%;
   }
 
   .form__type-title,
@@ -334,17 +338,13 @@
   .form__phone-title,
   .form__email-title,
   .form__addition-title {
-    position: absolute;
-    width: 20%;
-    left: 50px;
+    align-items: stretch;
+    width: 25%;
+    margin-top: 15px;
 
     &::after {
       display: none;
     }
-  }
-
-  .form__type-title {
-    top: 50px;
   }
 
   .form__type-label {
@@ -367,32 +367,28 @@
     height: 22px;
   }
 
-  .form__fields--colored {
+  .form__color {
+    display: flex;
+    padding: 49px 20px 27px 50px;
     background-color: $complementary-background;
   }
 
-  .form__color {
-    position: relative;
-    padding: 49px 20px 27px 217px;
-  }
-
-  .form__color-title,
-  .form__name-title {
-    top: 65px;
-    left: 50px;
-
-    &::after {
-      display: none;
-    }
-  }
-
   .form__color-wrapper {
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
 
     & p {
-      width: 263px;
+      width: 50%;
       margin-bottom: 26px;
+    }
+  }
+
+  .form__color-title {
+    width: 24%;
+
+    &::after {
+      display: none;
     }
   }
 
@@ -417,8 +413,8 @@
   }
 
   .form__name {
-    position: relative;
-    padding: 55px 50px 45px 217px;
+    display: flex;
+    padding: 55px 50px 45px 50px;
 
     & p {
       display: flex;
@@ -426,6 +422,18 @@
       width: 100%;
       margin-bottom: 30px;
     }
+  }
+
+  .form__name-title {
+    width: 25%;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__name-wrapper {
+    width: 75%;
   }
 
   .form__name-label {
@@ -452,37 +460,37 @@
   }
 
   .form__phone {
-    position: relative;
-    padding: 63px 50px 0 217px;
+    padding: 55px 50px 0 50px;
+    background-color: $complementary-background;
+  }
 
-    & p {
-      position: static;
-      margin-bottom: 0;
-    }
+  .form__phone-wrapper {
+    position: relative;
+    display: flex;
+    margin-bottom: 0;
 
     & svg {
-      top: 60px;
-      right: 75px;
+      position: absolute;
+      top: 5px;
+      right: 25px;
     }
   }
 
-  .form__phone-title {
-    top: 70px;
+  .form__phone-title,
+  .form__email-title {
+    width: 25%;
   }
 
   .form__phone-field {
+    width: 75%;
     padding-left: 15px;
     padding-right: 60px;
   }
 
   .form__email {
     position: relative;
-    padding: 30px 50px 50px 217px;
-
-    & p {
-      position: static;
-      margin-bottom: 0;
-    }
+    padding: 25px 50px 50px 50px;
+    background-color: $complementary-background;
 
     & svg {
       top: 35px;
@@ -490,11 +498,19 @@
     }
   }
 
-  .form__email-title {
-    top: 40px;
+  .form__email-wrapper {
+    position: relative;
+    display: flex;
+
+    & svg {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+    }
   }
 
   .form__email-field {
+    width: 75%;
     padding-left: 17px;
     padding-right: 60px;
     font-size: 19px;
@@ -505,16 +521,20 @@
   }
 
   .form__addition {
-    position: relative;
-    padding: 50px 50px 46px 217px;
+    display: flex;
+    padding: 50px 50px 50px 50px;
   }
 
   .form__addition-title {
-    top: 70px;
+    width: 25%;
   }
 
-  .form__addition-field::placeholder {
-    font-size: 19px;
+  .form__addition-field {
+    width: 75%;
+
+    &::placeholder {
+      font-size: 19px;
+    }
   }
 
   .form__button-wrapper {
@@ -523,17 +543,21 @@
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 30px;
   }
 
   .form__elaboration {
+    width: 60%;
     font-size: 17px;
     line-height: 30px;
     padding-top: 10px;
+    text-align: right;
   }
 
   .form__button {
     width: 35%;
-    margin-bottom: 50px;
+    height: 52px;
+    margin-bottom: 0;
   }
 }
 
@@ -554,7 +578,7 @@
   .form__phone,
   .form__email,
   .form__addition {
-    padding-left: 225px;
+    padding-left: 112px;
   }
 
   .form__type,
@@ -570,35 +594,68 @@
   }
 
   .form__type-title {
-    left: 115px;
+    width: 10%;
+    margin-right: 14px;
+    overflow: hidden;
   }
 
-  .form__color-title,
-  .form__name-title,
-  .form__phone-title,
-  .form__email-title,
-  .form__addition-title {
-    left: 110px;
+  .form__color-title {
+    width: 11%;
+    margin-right: 14px;
+    overflow: hidden;
+  }
+
+  .form__color-wrapper {
+    width: 100%;
+
+    & p {
+      width: 30%;
+    }
+  }
+
+  .form__name-title {
+    width: 12%;
+    margin-right: 15px;
+    overflow: hidden;
   }
 
   .form__phone {
-    padding-top: 64px;
+    padding-top: 55px;
+
+    & svg {
+      right: 5px;
+    }
   }
 
-  .form__phone svg {
-    right: 235px;
+  .form__phone-title,
+  .form__email-title {
+    width: 15%;
+    margin-right: 14px;
+    overflow: hidden;
+  }
+
+  .form__phone-field,
+  .form__email-field,
+  .form__addition-field {
+    width: 100%;
   }
 
   .form__email {
-    padding-top: 30px;
+    padding-top: 25px;
 
     & svg {
-      right: 230px;
+      right: 5px;
     }
   }
 
   .form__addition {
-    padding-bottom: 40px;
+    padding-bottom: 45px;
+  }
+
+  .form__addition-title {
+    width: 14%;
+    margin-right: 14px;
+    overflow: hidden;
   }
 
   .form__button-wrapper {
@@ -607,6 +664,6 @@
   }
 
   .form__button {
-    width: 33%;
+    width: 34%;
   }
 }
