@@ -2,6 +2,7 @@
 
 Mishka is a handmade knitwear online store
 
+
 ## Used technologies: 
 * HTML
 * CSS (used flex-boxes for page grid)
@@ -11,6 +12,7 @@ Mishka is a handmade knitwear online store
 * BEM methodology 
 * Retina support
 * Responsive design
+
 
 ## Cross-browser compatibility
 * Chrome 
